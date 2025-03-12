@@ -1,0 +1,18 @@
+[package]
+name = "evolv"
+version = "1.0.0"
+authors = []
+
+[addresses]
+alonix = "8a798635ca9ad165a7b4559be1353de1d1ab7cfffa1daeb370a7e2f6e2c754d4"
+
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "aptos-release-v1.25"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies]
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "aptos-release-v1.25", subdir = "aptos-move/framework/aptos-token-objects" }
+
+[dev-dependencies]
